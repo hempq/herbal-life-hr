@@ -8,12 +8,6 @@ import Table from 'react-bootstrap/Table'
 import Alert from 'react-bootstrap/Alert'
 import '../App.css';
 
-
-
-/**
- * @component Form
- * @props - { object } -  config
- */
 const BackendTest = (props) => {
   const [results, setResult] = useState([]);
   const [text, setText] = useState(null);
