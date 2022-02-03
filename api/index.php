@@ -28,7 +28,6 @@ if ($_POST){
         }
     };
        
-
     foreach ($wordsWithE as $key => $value) {
         $x = 0;
         foreach (count_chars($value, 1) as $i => $val) {
@@ -39,14 +38,12 @@ if ($_POST){
                 $x=$x + $val;
         }
     };
-
+        
         if ($x%2 == 0) {
             $wordsWithEvenE[] = $value;
         }
-       
 
     };
-
     echo json_encode(
         [
             "message" => "There are " . count($wordsWithEvenE) . " results",
